@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   }
 
 
-  const { name, email, contact, deliveryAddress, item, quantity, message } = req.body;
+  const { name, email, contact, address, item, quantity, message } = req.body;
 
 
   try {
@@ -29,7 +29,7 @@ export default async function handler(req, res) {
   Name: ${name}
   Email: ${email}
   Contact: ${contact || "Not provided"}
-  Delivery Address: ${deliveryAddress || "Not provided"}
+  Delivery Address: ${address || "Not provided"}
   Item: ${item || "Not specified"}
   Quantity: ${quantity}
   Message: ${message || "None"}
